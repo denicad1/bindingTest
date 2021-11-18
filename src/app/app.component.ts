@@ -7,4 +7,17 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'testBinding';
+
+  oddOrEven=[];
+
+  onTimeList(timeChange: {time:number}){
+    
+    this.oddOrEven.push(timeChange.time
+    )
+    console.log();
+    }
 }
+
+
+
+;
