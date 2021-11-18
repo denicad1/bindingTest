@@ -1,9 +1,8 @@
-
 <app-game-control (start)="onTimeList($event)"></app-game-control>
 
-<ul >
-  <li *ngFor="let or of oddOrEven; let i=index"> 
-    <app-odd *ngIf="(i+1)%2==1" [time]="or"></app-odd>
-    <app-even *ngIf="(i+1)%2==0"[time]="or"></app-even>
- </li>
+<ul>
+  <li *ngFor="let or of oddOrEven; let i = index" class="list-unstyled">
+    <app-odd *ngIf="(i + 1) % 2 == 1" [time]="or"></app-odd>
+    <app-even *ngIf="(i + 1) % 2 == 0" [time]="or"></app-even>
+  </li>
 </ul>
